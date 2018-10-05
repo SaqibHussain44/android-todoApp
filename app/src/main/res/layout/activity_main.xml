@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="org.saqib.dev.mnemonic.MainActivity">
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskList"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewGrouptxtbox"
+        android:layout_alignParentTop="true"
+
+        android:layout_above="@+id/viewGrouptxtbox" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/viewGrouptxtbox"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/primary_dark"
+        android:tint="@color/white"
+        android:clickable="true"
+        android:layout_margin="7dp"
+        app:fabSize="normal"
+        app:elevation="10dp"
+        app:borderWidth="0dp"
+        android:onClick="fabClicked"
+        android:src="@android:drawable/ic_input_add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/viewGrouptxtbox"
+        android:background="@color/primary"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/quickText"
+            android:layout_width="0dip"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:hint="Enter quick task here:"
+            android:padding="10dp"
+            android:backgroundTint="@color/white_light"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:elevation="6dp"
+            android:textColorHint="@color/white_light"
+            />
+
+        <ImageButton
+            android:layout_width="0dip"
+            android:layout_weight="0.1"
+            android:id="@+id/imgSubmit"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:onClick="submitQuickTask"
+            android:src="@drawable/ic_done_white_24dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

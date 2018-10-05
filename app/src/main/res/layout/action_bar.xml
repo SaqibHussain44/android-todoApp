@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    >
+
+     <ImageView
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:layout_gravity="center_vertical"
+         android:src="@drawable/exclamation_alert"
+         android:id="@+id/logo_spinner"
+         />
+
+     <Spinner
+         android:id="@+id/spinner1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:popupBackground="@color/primary"
+         android:layout_gravity="center_vertical"
+         android:backgroundTint="@color/white"
+         android:dropDownWidth="250dp"
+         android:popupElevation="6dp"></Spinner>
+
+</LinearLayout>

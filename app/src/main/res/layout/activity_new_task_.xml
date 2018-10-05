@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp"
+    tools:context="org.saqib.dev.mnemonic.newTask_Activity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_Tasktodo"
+        android:text="What is to be done?"
+        android:textColor="@color/primary_dark"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Tasktodo"
+        android:hint="Enter Task Here"
+        android:layout_below="@id/txtView_Tasktodo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_Taskdate"
+        android:text="Due date"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primary_dark"
+        android:layout_below="@id/txt_Tasktodo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Taskdate"
+        android:hint="Date not set"
+        android:focusable="false"
+        android:layout_below="@id/txtView_Taskdate"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_view_edit"
+        android:hint="Time not set"
+        android:focusable="false"
+        android:layout_below="@id/txt_Taskdate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_TaskList"
+        android:text="Add to List"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primary_dark"
+        android:layout_below="@id/time_view_edit"/>
+
+    <Spinner
+        android:id="@+id/spinnerTaskList"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="@color/black"
+        android:dropDownVerticalOffset="30dp"
+        android:layout_below="@id/txtView_TaskList"
+        android:dropDownWidth="wrap_content"
+        android:spinnerMode="dialog"
+        android:overlapAnchor="false"
+        android:popupElevation="6dp"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddnewList"
+        android:layout_below="@id/txtView_TaskList"
+        android:src="@drawable/ic_playlist_add_blue_24dp"
+        android:background="@color/background"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>
